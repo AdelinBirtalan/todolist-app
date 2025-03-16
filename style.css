@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: url(assets/background1.jpg);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(0, 186, 254, 0.5);
+    border-radius: 13px;
+    padding: 20px; 
+    width: 40rem;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.input-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#myInput {
+    width: 30rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#myInput:focus {
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#myInput::placeholder {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#myBtn {
+    padding: 10px;
+    border: none;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 15px;
+    text-shadow: 2px 3px 8px rgba(0,0,0,0.6);
+    background-color: rgba(0, 30, 254, 0.7);
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+
+#myBtn:hover {
+    background-color: rgb(0, 30, 255);
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+}
+
+.text-container {
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.text-container ul {
+    padding: 0;
+}
+
+.text-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(13, 116, 219, 0.9);
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.text-container li:hover {
+    background-color: rgba(13, 116, 219, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+}
+
+.text-container span {
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.text-container button {
+    font-size: 16px;
+    padding: 5px;
+    transition: color 0.2s ease;
+}
+
+.text-container button:hover {
+    color: #ff4444;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin-top: 8rem;
+        padding: 15px;
+    }
+    
+    .input-container {
+        width: 100%;
+    }
+    
+    #myInput {
+        width: 70%;
+        font-size: 14px;
+    }
+    
+    #myBtn {
+        width: 30%;
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%;
+        margin-top: 5rem;
+        padding: 10px;
+    }
+    
+    .input-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #myInput {
+        width: 100%;
+        border-radius: 13px;
+        margin-bottom: 10px;
+    }
+    
+    #myBtn {
+        width: 100%;
+        border-radius: 13px;
+    }
+    
+    .text-container span {
+        font-size: 14px;
+    }
+    
+    .text-container li {
+        padding: 8px 10px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .container {
+        margin-top: 3rem;
+    }
+    
+    #myInput::placeholder {
+        font-size: 13px;
+    }
+    
+    .text-container span {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 50rem;
+        margin-top: 18rem;
+    }
+    
+    #myInput {
+        width: 35rem;
+    }
+}
